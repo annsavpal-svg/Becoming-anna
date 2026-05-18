@@ -519,9 +519,11 @@ export default function BecomingAnna() {
           <div className="flip-container" style={{height:230}} onClick={()=>setQFlip(p=>!p)}>
             <div className={`flip-inner${qFlip?" flipped":""}`} style={{height:"100%"}}>
               <div className="flip-front" style={{
-                background:`linear-gradient(145deg,#fff0f5,#ffe0ec)`,
-                border:`1.5px solid ${C.magenta}44`,
-                display:"flex",flexDirection:"column",justifyContent:"center",padding:18,
+                background:`linear-gradient(145deg,#ffe8f0,#fff0e8)`,
+border:`1.5px solid ${C.magenta}44`,
+padding:16,display:"flex",flexDirection:"column",justifyContent:"flex-start",
+overflowY:"auto", WebkitOverflowScrolling:"touch",
+padding:18,
               }}>
                 <div style={{fontSize:10,letterSpacing:2.5,color:C.magenta,textTransform:"uppercase",marginBottom:10,fontFamily:"'Josefin Sans',sans-serif"}}>⚔️ Law of the Day</div>
                 <div style={{fontFamily:"'Great Vibes',cursive",fontSize:22,color:C.gold,marginBottom:8}}>{quote.law}</div>
